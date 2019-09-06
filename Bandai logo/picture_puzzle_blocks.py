@@ -15,18 +15,6 @@ left_and_right_border = 150 # pixels
 canvas_width = (block_size + left_and_right_border) * 2
 canvas_height = (block_size + top_and_bottom_border) * 2
 
-#
-#--------------------------------------------------------------------#
-
-
-
-#-----Functions for Managing the Canvas------------------------------#
-#
-# The functions in this section are called by the main program to
-# set up the drawing canvas for your image.  You should not change
-# any of the code in this section.
-#
-
 # Set up the canvas and draw the background for the overall image
 def create_drawing_canvas():
 
@@ -116,30 +104,8 @@ def release_drawing_canvas():
     hideturtle()
     done()
 
-#
+
 #--------------------------------------------------------------------#
-
-
-
-#-----Test data------------------------------------------------------#
-#
-# These are the data sets you will use to test your code.
-# Each of the data sets is a list specifying the locations of
-# the blocks:
-#
-# 1. The name of the block, from 'Block A' to 'Block D'
-# 2. The place to put the block, either 'Top left', 'Top right',
-#    'Bottom left' or 'Bottom right'
-# 3. The block's orientation, meaning the direction in which the top
-#    of the block is pointing, either 'Up', 'Down', 'Left' or 'Right'
-#
-# You can create further data sets, but do not change any of the
-# given ones below because they will be used to test your submission.
-#
-
-# The following data set doesn't require drawing any blocks
-# at all.  You may find it useful as a dummy argument when you
-# first start developing your "stack_blocks" function.
 
 arrangement_00 = []
 
@@ -273,13 +239,6 @@ arrangement_99 = [['Block C', 'Bottom left', 'Up'],
 
 #
 #--------------------------------------------------------------------#
-
-
-
-#-----Student's Solution---------------------------------------------#
-#
-#  Complete the assignment by replacing the dummy function below with
-#  your own "stack_blocks" function.
 
 
 
@@ -753,7 +712,6 @@ title('BANDAI logo')
 mark_coords(True, True)
 
 #############################################################################
-### Call the student's function to display the stack of blocks
 ### ***** Change the argument to this function to test your
 ### ***** code with different data sets
 stack_blocks(arrangement_99)  # see the available arrangement lists above
